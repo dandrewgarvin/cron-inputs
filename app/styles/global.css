@@ -1,0 +1,65 @@
+.CronParser {
+  display: flex;
+}
+
+.CronParser .CronInput + .CronInput {
+  margin-left: 30px;
+}
+
+.CronParser .CronInput {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 200px;
+}
+
+.CronParser .CronInput p {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.CronParser .CronInput input {
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.CronParser .DropdownList {
+  box-sizing: border-box;
+  border: 1px solid #333;
+  border-radius: 0px 0px 8px 8px;
+  position: absolute;
+  width: 100%;
+  top: 46px;
+  max-height: 320px;
+  overflow-x: scroll;
+}
+
+.CronParser .DropdownList ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  overflow: hidden;
+}
+
+.CronParser .DropdownList li {
+  text-align: left;
+  cursor: pointer;
+  padding: 10px;
+  color: #333;
+}
+
+.CronParser .DropdownList :first-child {
+  color: #777;
+}
+
+.CronParser .DropdownList :last-child {
+  border-radius: 0px 0px 8px 8px;
+}
+
+.CronParser .DropdownList li:hover {
+  background: #99ccff77;
+}
